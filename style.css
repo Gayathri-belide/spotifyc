@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*
+{
+    margin:0;
+    padding:0;
+}
+nav ul{
+    background-color: black;
+    color:white;
+    font-family:'Ubuntu',sans-serif;
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    height:75%;
+}
+nav ul li
+{
+    padding:0 15px;
+}
+#brand
+{    font-family: "Varela Round";
+    font-weight: bolder;
+    font-size:37px;
+}
+#logo
+{
+    height:10vh;
+
+}
+#progress
+{   position:absolute;
+    width:80%;
+    right:10%;
+    cursor:pointer;
+}
+.bottom
+{   top:60%;
+    position: sticky;
+    background-color: black;
+    height:13vh;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    
+}
+.songitem
+{
+    display:flex;
+    height:7vh;
+    background-color: white;
+    color:black;
+    border-radius: 25px;
+    align-items:center;
+    justify-content: space-between;
+    margin:12px;
+    padding:15px;
+}
+.songitem img{
+   
+    border-radius: 30px;
+}
+#cover
+{
+    height:7vh;
+    width:7vh;
+}
+.icons
+{position:absolute;
+    left:46%;
+    margin-top:25px;
+}
+.icons i{
+  cursor:pointer;
+}
+.container
+{
+    height: 70vh;
+    background-color: black;
+    color:white;
+    font-family:'Varela Round';
+    display: flex;
+    margin:23px auto;
+    width:70%;
+    border-radius: 10px;
+    padding:20px;
+    padding-right: 20px;
+    background-image: url('bg.jpg');
+}
+.songList i
+{
+    cursor:pointer;
+}
+.songinfo
+{
+    position:absolute;
+   bottom:0;
+    left:10vw;
+
+    font-family:'Varela Round';
+}
+.songinfo img{
+    opacity:0;
+    transition:opacity 0.1s ease-in;
+}
