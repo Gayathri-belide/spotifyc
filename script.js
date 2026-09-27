@@ -7,10 +7,9 @@ let song = [
     { songname: "Tu Jo Mila", filePath: "4.mp3", coverPath: "./cover4.jpeg" },
     { songname: "Lambiya Judaiyan", filePath: "5.mp3", coverPath: "./cover5.jpeg" },
     { songname: "Salam-e-Ishq", filePath: "6.mp3", coverPath: "./cover6.jpeg" },
-    { songname: "Tere Bin", filePath: "7.mp3", coverPath: "./cover7.jpeg" },
+    { songname: "Manidweepa Varnana", filePath: "./manidweepa_varana.mp3", coverPath: "./cover7.jpeg" },
     { songname: "Agar Tum Saath Ho", filePath: "8.mp3", coverPath: "./cover8.jpeg" },
-    { songname: "Zaroori Tha", filePath: "9.mp3", coverPath: "./cover9.jpeg" },
-    { songname: "Manidweepa Varnana", filePath: "./manidweepa_varana.mp3", coverPath: "./cover7.jpeg" }
+    { songname: "Zaroori Tha", filePath: "9.mp3", coverPath: "./cover9.jpeg" }
 ];
 
 songitems.forEach((element, i) => {
