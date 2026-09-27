@@ -3,18 +3,20 @@ let songin=0;
 let songitems=Array.from(document.getElementsByClassName("songitem"));
 console.log(songitems);
 let song=[
-    {songname:"Tuj Me rab Dikta he",filePath:"1.mp3",coverPath:"./cover1.jpeg"},
-    {songname:"Kahani suno",filePath:"2.mp3",coverPath:"./cover2.jpeg"},
-    {songname:"Ye Ratein",filePath:"3.mp3",coverPath:"./cover3.jpeg"},
+    {songname:"Tujh Mein Rab Dikhta Hai",filePath:"1.mp3",coverPath:"./cover1.jpeg"},
+    {songname:"Kahani Suno",filePath:"2.mp3",coverPath:"./cover2.jpeg"},
+    {songname:"Ye Ratein Ye Mausam",filePath:"3.mp3",coverPath:"./cover3.jpeg"},
     {songname:"Tu Jo Mila",filePath:"4.mp3",coverPath:"./cover4.jpeg"},
-    {songname:"Lambiya Judain",filePath:"5.mp3",coverPath:"./cover5.jpeg"},
-    {songname:"Salam e Ishq",filePath:"6.mp3",coverPath:"./cover6.jpeg"},
+    {songname:"Lambiya Judaiyan",filePath:"5.mp3",coverPath:"./cover5.jpeg"},
+    {songname:"Salam-e-Ishq",filePath:"6.mp3",coverPath:"./cover6.jpeg"},
+    {songname:"Tere Bin",filePath:"1.mp3",coverPath:"./cover1.jpeg"},
+    {songname:"Agar Tum Saath Ho",filePath:"2.mp3",coverPath:"./cover2.jpeg"},
+    {songname:"Zaroori Tha",filePath:"3.mp3",coverPath:"./cover3.jpeg"},
+    {songname:"Manidweepa Varnana",filePath:"./manidweepa_varna.mp3",coverPath:"./cover7.jpeg"},
 ]
 songitems.forEach((element,i)=>{
     element.getElementsByTagName("img")[0].src=song[i].coverPath;
     element.getElementsByClassName("songname")[0].innerHTML=song[i].songname;
-   
-    
 })
 const makeallplay=()=>{
     Array.from(document.getElementsByClassName('songplay')).forEach((element)=>
@@ -72,7 +74,7 @@ Array.from(document.getElementsByClassName("songplay")).forEach((ele)=>{
 })
 document.getElementById('next').addEventListener('click',()=>
 {
-    if(index>5) index=1;
+    if(index>song.length) index=1;
     else index+=1;
     makeallplay();
     let e=document.getElementById(index);
@@ -88,7 +90,7 @@ document.getElementById('next').addEventListener('click',()=>
 })
 document.getElementById('prev').addEventListener('click',()=>
 {
-    if(index==1) index=6;
+    if(index==1) index=song.length;
     else index-=1;
     makeallplay();
     let e=document.getElementById(index);
